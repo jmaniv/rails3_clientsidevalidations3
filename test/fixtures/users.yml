@@ -1,0 +1,9 @@
+one:
+  name: MyString
+  customer_id: 1
+  active: false
+
+two:
+  name: MyString
+  customer_id: 1
+  active: false

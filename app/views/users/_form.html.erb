@@ -1,0 +1,18 @@
+<%= javascript_include_tag "rails.validations"%>
+
+<%= form_for @user, :validate => true do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :customer_id %><br />
+    <%= f.text_field :customer_id %>
+  </p>
+  <p>
+    <%= f.label :active %><br />
+    <%= f.check_box :active %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
